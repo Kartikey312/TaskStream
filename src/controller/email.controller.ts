@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { emailQueue } from "../queue/email.queue.js";
+import { emailQueue } from "../queue/email.queue";
 
 export const sendEmail = async (req: Request, res: Response) => {
   const { email } = req.body as { email: string };

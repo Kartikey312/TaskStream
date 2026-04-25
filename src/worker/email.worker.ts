@@ -1,6 +1,6 @@
 import { Worker, Job } from "bullmq";
-import { redisConnection } from "../config/redis.js";
-import { EmailJobData } from "../types/job.types.js";
+import { redisConnection } from "../config/redis";
+import { EmailJobData } from "../types/job.types";
 
 const worker = new Worker<EmailJobData>(
   "emailQueue",
